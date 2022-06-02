@@ -1,0 +1,55 @@
+button {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    font-size: 30px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: #e9d882;
+}
+
+#voting-information {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    padding: 30px;
+    background-color: #a6b0b9;
+    box-shadow: 5px 10px 8px #1d2124;
+
+    #voters {
+        // margin-right: 30px;
+        float: left;
+        display: inline;
+        width: 33%;
+    }
+
+    #senators {
+        display: inline-block;
+        width: 33%;
+    }
+
+    #presidents {
+        display: inline-block;
+        width: 33%;
+        position: absolute;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        margin: 0;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .user-info, .senator-info, .president-info {
+        margin-bottom: 20px;
+    }
+}

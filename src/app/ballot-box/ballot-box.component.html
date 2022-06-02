@@ -1,0 +1,39 @@
+<div id="cast-vote">
+    <div id="action-screen">
+        <start-election *ngIf="voting_step == 0"
+            [button_clicked]="button_clicked"
+            (user_authorized)="onUserAuthorized($event)"
+        ></start-election>
+
+        <voter-login *ngIf="voting_step == 1"
+            [button_clicked]="button_clicked"
+            [restart_login]="restart_login"
+            (end_voting)="onEndVoting()"
+            (user_logged_in)="onUserLoggedIn($event)"
+        ></voter-login>
+
+        <cast-vote *ngIf="voting_step == 2"
+            [button_clicked]="button_clicked"
+            [user_logged_in]="user_logged_in"
+            (user_voted)="onUserVoted()"
+        ></cast-vote>
+
+        <finish-voting *ngIf="voting_step == 3"
+            [button_clicked]="button_clicked"
+            (end_session_clicked)="onEndSession($event)"
+        ></finish-voting>
+
+        <finish-election *ngIf="voting_step == 4"
+            [button_clicked]="button_clicked"
+            (session_ended)="onVotingEnded($event)"
+        ></finish-election>
+
+        <voting-results *ngIf="voting_step == 5"
+        ></voting-results>
+    </div>
+    <div id="buttons-screen">
+        <ballot-buttons
+            (button_clicked)="onButtonClicked($event)"
+        ></ballot-buttons>
+    </div>
+</div>

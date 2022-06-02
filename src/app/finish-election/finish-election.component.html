@@ -1,0 +1,14 @@
+<p id="extra-message">*para voltar a pagina de seleção pressione 0 e CONFIRMA</p>
+
+<div id="finish-election">
+    <div id="finish-session">
+        <div id="invalid-password" class="invisible">
+            <p>SENHA INCORRETA!</p>
+            <p class="try-again">tente novamente</p>
+        </div>
+        <img src="../../assets/logo_justica_eleitoral.png">
+        <div class="input-group">
+            <input type="password" class="form-control" placeholder="Informe sua senha para encerrar a sessão" aria-label="Informe sua senha para encerrar a sessão" disabled [ngModel]="current_password">
+        </div>
+    </div>
+</div>

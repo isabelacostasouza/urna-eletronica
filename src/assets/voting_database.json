@@ -1,0 +1,33 @@
+{
+    "senators": {
+        "111": "Raven Man",
+        "112": "Lady Ana",
+        "222": "Jazal Goldmane",
+        "223": "Marisi Nacatl",
+        "333": "Adeline Innistrad"
+    },
+    "presidents": {
+        "11": "Liliana Vess",
+        "22": "Ajani Goldmane",
+        "33": "Chandra Nalaar"
+    },
+    "parties": {
+        "1": "BLK",
+        "2": "WHT",
+        "3": "RED"
+    },
+    "voters": {
+        "0001": "Maria Silva Santos",
+        "0002": "João Pereira Lima",
+        "0003": "Ana Ferreira Costa",
+        "0004": "Carlos Almeida Rodrigues",
+        "0005": "Fernanda Souza Araújo",
+        "0006": "Luiz Carvalho Ribeiro",
+        "0007": "Carla Barros Andrade",
+        "0008": "Marcos Batista Dias",
+        "0009": "Luiza Nunes Freitas",
+        "0010": "José Rocha Santana"
+    },
+    "action_buttons": ["BRANCO", "CORRIGE", "CONFIRMA"],
+    "tse_password": "12345"
+}

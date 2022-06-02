@@ -1,0 +1,37 @@
+<div id="cast-vote">
+    <div id="candidate-photo" *ngIf="valid_candidate"></div>
+
+    <div id="senator-voting" *ngIf="this.voting_number < 2">
+        <p>Senador</p>
+        <input type="text" maxlength="1" disabled [ngModel]="senator_voting[0]">
+        <input type="text" maxlength="1" disabled [ngModel]="senator_voting[1]">
+        <input type="text" maxlength="1" disabled [ngModel]="senator_voting[2]">
+    </div>
+
+    <div id="president-voting" *ngIf="this.voting_number == 2">
+        <p>Presidente</p>
+        <input type="text" maxlength="1" disabled [ngModel]="president_voting[0]">
+        <input type="text" maxlength="1" disabled [ngModel]="president_voting[1]">
+    </div>
+
+    <div id="correct-voting-message" *ngIf="valid_candidate">
+        <p>Nome: <span>{{current_candidate_name}}</span></p>
+        <p>Partido: <span>{{current_candidate_part}}</span></p>
+    </div>
+
+    <div id="null-message" *ngIf="this.voting_type == 'null'">
+        <p class="wrong-number">NUMERO ERRADO</p>
+        <p class="null-vote">VOTO NULO</p>
+    </div>
+
+    <div id="white-message" *ngIf="this.voting_type == 'white'">
+        <p class="white-vote">VOTO EM BRANCO</p>
+    </div>
+
+    <div id="bottom-content" class="invisible">
+        <div class="hl"></div>
+        <p class="description">Aperte a tecla:</p>
+        <p class="description secondary">CONFIRMA para CONFIRMAR seu voto</p>
+        <p class="description secondary">CORRIGE para REINICIAR este voto</p>
+    </div>
+</div>

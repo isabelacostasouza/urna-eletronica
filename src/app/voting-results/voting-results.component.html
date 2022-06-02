@@ -1,0 +1,26 @@
+<div id="voting-results">
+    <div id="senator-votes">
+        <h2>Votos para senador</h2>
+        <div *ngFor="let senator of senator_votes_array; let i = index" class="voting-result">
+            <p [style.color]="(i == 0 || i == 1) ? 'green' : 'black'" [style.font-weight]="(i == 0 || i == 1) ? 'bold' : 'normal'">{{senators[senator[0]]}} ({{parties[senator[0][0]]}})</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" [style.background-color]="(i == 0 || i == 1) ? 'green' : '#007bff'" [style.width]="((senator[1]/total_votes_senator)*100)+'%'">
+                    {{((senator[1]/total_votes_senator)*100) | number : '1.0-0'}}%
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="president-votes">
+        <h2>Votos para presidente</h2>
+        <div *ngFor="let president of president_votes_array; let i = index" class="voting-result">
+            <p [style.color]="i == 0 ? 'green' : 'black'" [style.font-weight]="i == 0 ? 'bold' : 'normal'">{{presidents[president[0]]}} ({{parties[president[0][0]]}})</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" [style.background-color]="i == 0 ? 'green' : '#007bff'" [style.width]="((president[1]/total_votes_president)*100)+'%'">
+                    {{((president[1]/total_votes_president)*100) | number : '1.0-0'}}%
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="warning">* ATENÇÃO -> ao sair dessa tela os dados da eleição serão reiniciados</p>
+</div>

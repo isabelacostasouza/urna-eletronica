@@ -1,0 +1,41 @@
+#voting-results {
+    padding: 20px;
+
+    .progress {
+        width: 60%;
+        float: right;
+        margin-top: 6px;
+    }
+
+    .voting-result {
+        padding: 5px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        margin-left: -1px;
+    }
+
+    p {
+        display: inline;
+    }
+
+    #president-votes {
+        margin-top: 25px;
+    }
+
+    #election-results {
+        font-size: 25px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #warning {
+        font-size: 13px;
+        font-style: italic;
+        position: absolute;
+        bottom: 20px;
+    }
+}

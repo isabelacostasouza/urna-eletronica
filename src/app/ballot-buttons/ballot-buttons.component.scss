@@ -1,0 +1,45 @@
+#voting-buttons {
+    #numbers {
+        padding-top: 4%;
+
+        .buttons-row {
+            padding: 10px 0px;
+            margin-left: 4%;
+
+            button {
+                width: 30%;
+                margin: 0 1%;
+                background-color: #15161a;
+                color: #c8d2ee;
+                font-weight: bold;
+                border-bottom: 3px solid #09090b;
+                border-right: 2px solid #09090b;
+                padding: 6%;
+                overflow: hidden;
+            }
+
+            *:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+            .white {
+                border: none;
+                color: #15161a;
+                background-color: #c8d2ee;
+            }
+
+            .correct {
+                border: none;
+                color: #15161a;
+                background-color: #d26637;
+            }
+
+            .confirm {
+                border: none;
+                color: #15161a;
+                background-color: #1cab5a;
+            }
+        }
+    }
+}

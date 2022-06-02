@@ -1,0 +1,27 @@
+<button class="btn" (click)="onClick()">?</button>
+
+<div id="voting-information" *ngIf="user_info">
+    
+    <div id="voters">
+        <h2>Eleitores</h2>
+        <div *ngFor="let user of users_keys" class="user-info">
+            <p><span>Título de eleitor:</span> {{user}}</p>
+            <p><span>Nome:</span> {{users[user]}}</p>
+        </div>
+    </div>
+    <div id="senators">
+        <h2>Senadores</h2>
+        <div *ngFor="let senator of senators_keys" class="senator-info">
+            <p><span>Número de campanha:</span> {{senator}}</p>
+            <p><span>Nome:</span> {{senators[senator]}}</p>
+        </div>
+    </div>
+    <div id="presidents">
+        <h2>Presidentes</h2>
+        <div *ngFor="let president of presidents_keys" class="president-info">
+            <p><span>Número de campanha:</span> {{president}}</p>
+            <p><span>Nome:</span> {{presidents[president]}}</p>
+        </div>
+    </div>
+
+</div>

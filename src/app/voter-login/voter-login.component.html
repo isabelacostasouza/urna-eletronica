@@ -1,0 +1,23 @@
+<p id="extra-message">*para encerrar a sessão pressione BRANCO</p>
+
+<div id="voter-login-screen">
+    <div id="voter-login">
+        <div id="invalid-number" class="invisible">
+            <p>TITULO INCORRETO!</p>
+            <p class="try-again">tente novamente</p>
+        </div>
+        <div id="double-voter" class="invisible">
+            <p>ELEITOR VOTOU!</p>
+            <p class="try-again">nao se pode votar duas vezes</p>
+        </div>
+        <div id="confirm-number" class="invisible">
+            <p>Você é <span>{{current_username}}?</span></p>
+            <p>CONFIRMA para confirmar dados</p>
+            <p class="try-again">CORRIGE para tentar novamente</p>
+        </div>
+        <img src="../../assets/logo_justica_eleitoral.png">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Informe seu titulo de eleitor" aria-label="Informe seu titulo de eleitor" disabled [ngModel]="current_number">
+        </div>
+    </div>
+</div>
