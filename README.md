@@ -6,4 +6,4 @@ Aplicação: ng serve
 
 Testes unitários: ng test
 
-Testes eend-to-end: ng e2e
+Testes end-to-end: ng e2e
